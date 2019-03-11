@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-angular7';
+  pageName = 'recipes';
+
+  onPageChange(selectedPage: string) {
+    this.pageName = selectedPage;
+  }
 }
